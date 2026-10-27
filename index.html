@@ -29,7 +29,7 @@
   }
   *{margin:0;padding:0;box-sizing:border-box;}
   body{
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     background: var(--creme);
     color: var(--cafe);
     line-height: 1.6;
@@ -138,23 +138,26 @@
   }
   .beneficios h2{color: #fff;}
   .beneficios .sub{color: var(--champagne);}
-  .beneficios ul{
-    list-style: none;
+  .beneficios .grade{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 10px 22px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 8px;
   }
-  .beneficios li{
-    background: rgba(255,253,247,0.12);
-    color: #fff;
-    border-radius: 10px;
-    padding: 10px 14px;
-    font-size: 16px;
+  .beneficios .tile{
+    background: rgba(251,243,228,0.12);
+    border-radius: 12px;
+    padding: 10px 12px;
   }
-  .beneficios li::before{
-    content: "✓ ";
-    color: var(--champagne);
-    font-weight: bold;
+  .beneficios .tile .emoji{
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 3px;
+  }
+  .beneficios .tile .titulo{
+    color: var(--creme);
+    font-size: 13.5px;
+    font-weight: 800;
+    line-height: 1.35;
   }
   footer{
     margin-top: 56px;
@@ -235,23 +238,23 @@
   <div class="beneficios">
     <h2>Tudo o que a Presença Diária oferece</h2>
     <p class="sub">Um só plano, com tudo incluído para você e para a sua família.</p>
-    <ul>
-      <li>Converse com a IA de Deus</li>
-      <li>Área Kids</li>
-      <li>Sua igreja recebe 10% como oferta</li>
-      <li>Explicar a Palavra</li>
-      <li>Devocional Maná Diário</li>
-      <li>Versículo do dia</li>
-      <li>Bíblia inteira</li>
-      <li>Ouça a Palavra</li>
-      <li>Quiz da Palavra</li>
-      <li>Historinhas "Um minutinho pra Deus!"</li>
-      <li>Chama diária</li>
-      <li>Moedas e prêmios</li>
-      <li>Loja cristã</li>
-      <li>Alvos de Oração</li>
-      <li>Conexão entre assinantes</li>
-    </ul>
+    <div class="grade">
+      <div class="tile"><div class="emoji">💬</div><div class="titulo">Converse com a IA de Deus</div></div>
+      <div class="tile"><div class="emoji">🧒</div><div class="titulo">Área Kids</div></div>
+      <div class="tile"><div class="emoji">⛪</div><div class="titulo">Sua igreja recebe 10% como oferta</div></div>
+      <div class="tile"><div class="emoji">🔎</div><div class="titulo">Explicar a Palavra</div></div>
+      <div class="tile"><div class="emoji">🕯️</div><div class="titulo">Devocional Maná Diário</div></div>
+      <div class="tile"><div class="emoji">📖</div><div class="titulo">Versículo do dia</div></div>
+      <div class="tile"><div class="emoji">📚</div><div class="titulo">Bíblia inteira</div></div>
+      <div class="tile"><div class="emoji">🎧</div><div class="titulo">Ouça a Palavra</div></div>
+      <div class="tile"><div class="emoji">❓</div><div class="titulo">Quiz da Palavra</div></div>
+      <div class="tile"><div class="emoji">🎬</div><div class="titulo">Historinhas "Um minutinho pra Deus!"</div></div>
+      <div class="tile"><div class="emoji">🔥</div><div class="titulo">Chama diária</div></div>
+      <div class="tile"><div class="emoji">💰</div><div class="titulo">Moedas e prêmios</div></div>
+      <div class="tile"><div class="emoji">🛍️</div><div class="titulo">Loja cristã</div></div>
+      <div class="tile"><div class="emoji">🙏</div><div class="titulo">Alvos de Oração</div></div>
+      <div class="tile"><div class="emoji">🤝</div><div class="titulo">Conexão entre assinantes</div></div>
+    </div>
   </div>
 </section>
 
