@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IA de Deus | sua presença diária</title>
+<meta name="description" content="O IA de Deus é uma plataforma cristã com inteligência artificial para a sua caminhada diária com Deus. Já está no ar no Brasil e chegando ao mundo.">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="IA de Deus">
+<meta property="og:title" content="IA de Deus | sua presença diária">
+<meta property="og:description" content="Plataforma cristã com inteligência artificial para a caminhada diária com Deus: conversa baseada na Palavra, devocional diário, Bíblia completa para ler e ouvir e um espaço feito para as crianças.">
+<meta property="og:url" content="https://iadedeus.com/">
+<meta property="og:image" content="https://iadedeus.com/arte-presenca.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IA de Deus | sua presença diária">
+<meta name="twitter:description" content="Plataforma cristã com inteligência artificial para a caminhada diária com Deus. Já está no ar no Brasil e chegando ao mundo.">
+<meta name="twitter:image" content="https://iadedeus.com/arte-presenca.jpg">
+<style>
+  :root{
+    --oliva:#6F7662;
+    --oliva-escuro:#59604F;
+    --champagne:#F5E6A8;
+    --creme:#FBF3E4;
+    --papel:#FFFDF7;
+    --marrom:#3A2518;
+    --cafe:#4A3020;
+    --suave:#8A7B66;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family: Georgia, 'Times New Roman', serif;
+    background: var(--creme);
+    color: var(--cafe);
+    line-height: 1.6;
+  }
+  header{
+    background: var(--oliva);
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  header img{height: 56px; width: auto; display: block;}
+  header .dominio{
+    color: var(--champagne);
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .hero{
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 56px 20px 8px;
+    text-align: center;
+  }
+  .hero h1{
+    font-size: 46px;
+    color: var(--marrom);
+    line-height: 1.15;
+  }
+  .hero .frase{
+    font-size: 22px;
+    color: var(--oliva-escuro);
+    font-style: italic;
+    margin-top: 6px;
+  }
+  .hero p{
+    font-size: 18px;
+    margin: 26px auto 0;
+    max-width: 700px;
+  }
+  .hero p strong{color: var(--marrom);}
+  section{
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 44px 20px 8px;
+  }
+  section h2{
+    text-align: center;
+    font-size: 30px;
+    color: var(--marrom);
+    margin-bottom: 8px;
+  }
+  section .sub{
+    text-align: center;
+    color: var(--suave);
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+  .paises{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 16px;
+  }
+  .pais{
+    background: var(--papel);
+    border: 1px solid #E7DCC3;
+    border-radius: 16px;
+    padding: 24px 18px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(58,37,24,0.06);
+  }
+  .pais .bandeira{font-size: 44px; line-height: 1.2;}
+  .pais h3{font-size: 21px; color: var(--marrom); margin-top: 8px;}
+  .status{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    background: #EFE7D2;
+    color: var(--cafe);
+  }
+  .status.noar{
+    background: var(--oliva);
+    color: #fff;
+    font-weight: bold;
+  }
+  .botao{
+    display: inline-block;
+    margin-top: 16px;
+    background: var(--champagne);
+    color: var(--marrom);
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 999px;
+    border: 1px solid #B08A2E;
+  }
+  .botao:hover{background: #EFDB8E;}
+  .beneficios{
+    background: var(--oliva);
+    border-radius: 20px;
+    padding: 34px 26px;
+  }
+  .beneficios h2{color: #fff;}
+  .beneficios .sub{color: var(--champagne);}
+  .beneficios ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 10px 22px;
+  }
+  .beneficios li{
+    background: rgba(255,253,247,0.12);
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 16px;
+  }
+  .beneficios li::before{
+    content: "✓ ";
+    color: var(--champagne);
+    font-weight: bold;
+  }
+  footer{
+    margin-top: 56px;
+    background: var(--marrom);
+    color: var(--creme);
+    text-align: center;
+    padding: 34px 20px 40px;
+  }
+  footer .empresa{font-size: 15px; letter-spacing: 0.5px;}
+  footer .links{margin-top: 14px;}
+  footer .links a{
+    color: var(--champagne);
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 16px;
+  }
+  footer .links a:hover{text-decoration: underline;}
+  @media (max-width: 560px){
+    .hero h1{font-size: 34px;}
+    .hero .frase{font-size: 19px;}
+    header img{height: 44px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="logomarca-oficial.png" alt="IA de Deus">
+  <span class="dominio">iadedeus.com</span>
+</header>
+
+<div class="hero">
+  <h1>IA de Deus</h1>
+  <div class="frase">sua presença diária</div>
+  <p>O IA de Deus é uma plataforma cristã com inteligência artificial criada para acompanhar você na caminhada diária com Deus. Aqui você conversa sobre a Bíblia e sobre a sua vida com respostas baseadas na Palavra, acompanha o devocional diário, lê e ouve a Bíblia completa e encontra um espaço feito só para as crianças, com historinhas, quiz e brincadeiras com a Palavra. E tem um detalhe que a gente ama: <strong>10% da sua assinatura retorna para a sua igreja como oferta</strong>. A assinatura se chama <strong>Presença Diária</strong> e já está no ar no Brasil.</p>
+</div>
+
+<section>
+  <h2>Nossa chegada ao mundo</h2>
+  <p class="sub">Começamos no Brasil e estamos levando a Presença Diária para cada vez mais países, um de cada vez, com o mesmo cuidado.</p>
+  <div class="paises">
+    <div class="pais">
+      <div class="bandeira">🇧🇷</div>
+      <h3>Brasil</h3>
+      <span class="status noar">No ar</span>
+      <br>
+      <a class="botao" href="https://iadedeus.com.br">Acessar o site do Brasil</a>
+    </div>
+    <div class="pais">
+      <div class="bandeira">🇲🇿</div>
+      <h3>Moçambique</h3>
+      <span class="status">Chegando</span>
+    </div>
+    <div class="pais">
+      <div class="bandeira">🇦🇴</div>
+      <h3>Angola</h3>
+      <span class="status">Chegando</span>
+    </div>
+    <div class="pais">
+      <div class="bandeira">🇲🇽</div>
+      <h3>México</h3>
+      <span class="status">Em preparação</span>
+    </div>
+    <div class="pais">
+      <div class="bandeira">🇨🇴</div>
+      <h3>Colômbia</h3>
+      <span class="status">Em preparação</span>
+    </div>
+    <div class="pais">
+      <div class="bandeira">🇵🇪</div>
+      <h3>Peru</h3>
+      <span class="status">Em preparação</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="beneficios">
+    <h2>Tudo o que a Presença Diária oferece</h2>
+    <p class="sub">Um só plano, com tudo incluído para você e para a sua família.</p>
+    <ul>
+      <li>Converse com a IA de Deus</li>
+      <li>Área Kids</li>
+      <li>Sua igreja recebe 10% como oferta</li>
+      <li>Explicar a Palavra</li>
+      <li>Devocional Maná Diário</li>
+      <li>Versículo do dia</li>
+      <li>Bíblia inteira</li>
+      <li>Ouça a Palavra</li>
+      <li>Quiz da Palavra</li>
+      <li>Historinhas "Um minutinho pra Deus!"</li>
+      <li>Chama diária</li>
+      <li>Moedas e prêmios</li>
+      <li>Loja cristã</li>
+      <li>Alvos de Oração</li>
+      <li>Conexão entre assinantes</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="empresa">TECHPAYMENT BRAZIL TECNOLOGIA LTDA · Pinhais - Paraná</div>
+  <div class="links">
+    <a href="https://iadedeus.com.br">iadedeus.com.br</a>
+    <a href="https://www.instagram.com/ia.dedeus">Instagram</a>
+    <a href="https://www.youtube.com/@iadedeusbrasil">YouTube</a>
+  </div>
+</footer>
+
+</body>
+</html>
