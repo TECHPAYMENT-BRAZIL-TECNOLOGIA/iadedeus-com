@@ -72,6 +72,21 @@
     max-width: 700px;
   }
   .hero p strong{color: var(--marrom);}
+  .hero .oferta{
+    font-size: 19px;
+    font-weight: bold;
+    color: var(--marrom);
+    margin-top: 16px;
+  }
+  .fecho{
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 28px 20px 0;
+    text-align: center;
+    font-size: 17px;
+  }
+  .fecho strong{color: var(--marrom);}
+  .botao .bs{display: none;}
   section{
     max-width: 1020px;
     margin: 0 auto;
@@ -166,10 +181,31 @@
     font-size: 16px;
   }
   footer .links a:hover{text-decoration: underline;}
-  @media (max-width: 560px){
-    .hero h1{font-size: 34px;}
-    .hero .frase{font-size: 19px;}
+  @media (max-width: 640px){
+    header{padding: 14px 16px;}
     header img{height: 44px;}
+    header .dominio{font-size: 13px;}
+    .hero{padding: 30px 16px 0;}
+    .hero h1{font-size: 32px;}
+    .hero .frase{font-size: 18px;}
+    .hero p{font-size: 16px; margin-top: 16px;}
+    .hero .oferta{font-size: 17px; margin-top: 12px;}
+    section{padding: 30px 14px 4px;}
+    section h2{font-size: 22px;}
+    section .sub{font-size: 14px; margin-bottom: 18px;}
+    .paises{grid-template-columns: repeat(3, 1fr); gap: 8px;}
+    .pais{padding: 12px 6px; border-radius: 12px;}
+    .pais .bandeira{font-size: 26px; line-height: 1.1;}
+    .pais h3{font-size: 14px; margin-top: 4px;}
+    .status{font-size: 11px; padding: 2px 8px; margin-top: 6px;}
+    .botao{font-size: 11px; padding: 6px 10px; margin-top: 8px;}
+    .botao .bl{display: none;}
+    .botao .bs{display: inline;}
+    .beneficios{padding: 22px 12px; border-radius: 16px;}
+    .beneficios .cards{grid-template-columns: repeat(3, 1fr); gap: 8px;}
+    .beneficios .cards img{border-radius: 8px;}
+    .fecho{font-size: 15px; padding-top: 20px;}
+    footer{margin-top: 36px;}
   }
 </style>
 </head>
@@ -183,7 +219,8 @@
 <div class="hero">
   <h1>IA de Deus</h1>
   <div class="frase">sua presença diária</div>
-  <p>O IA de Deus é uma plataforma cristã com inteligência artificial criada para acompanhar você na caminhada diária com Deus. Aqui você conversa sobre a Bíblia e sobre a sua vida com respostas baseadas na Palavra, acompanha o devocional diário, lê e ouve a Bíblia completa e encontra um espaço feito só para as crianças, com historinhas, quiz e brincadeiras com a Palavra. E tem um detalhe que a gente ama: <strong>10% da sua assinatura retorna para a sua igreja como oferta</strong>. A assinatura se chama <strong>Presença Diária</strong> e já está no ar no Brasil.</p>
+  <p>O IA de Deus é uma plataforma cristã com inteligência artificial criada para acompanhar você na caminhada diária com Deus.</p>
+  <p class="oferta">10% da sua assinatura retorna para a sua igreja como oferta</p>
 </div>
 
 <section>
@@ -195,14 +232,14 @@
       <h3>Brasil</h3>
       <span class="status noar">No ar</span>
       <br>
-      <a class="botao" href="https://iadedeus.com.br">Acessar o site do Brasil</a>
+      <a class="botao" href="https://iadedeus.com.br"><span class="bl">Acessar o site do Brasil</span><span class="bs">Acessar</span></a>
     </div>
     <div class="pais">
       <div class="bandeira">🇲🇿</div>
       <h3>Moçambique</h3>
       <span class="status noar">No ar</span>
       <br>
-      <a class="botao" href="http://mz.iadedeus.com">Acessar o site de Moçambique</a>
+      <a class="botao" href="http://mz.iadedeus.com"><span class="bl">Acessar o site de Moçambique</span><span class="bs">Acessar</span></a>
     </div>
     <div class="pais">
       <div class="bandeira">🇦🇴</div>
@@ -250,6 +287,8 @@
     </div>
   </div>
 </section>
+
+<div class="fecho">A assinatura se chama <strong>Presença Diária</strong> e já está no ar no Brasil.</div>
 
 <footer>
   <div class="empresa">TECHPAYMENT BRAZIL TECNOLOGIA LTDA · Pinhais - Paraná - Brasil</div>
